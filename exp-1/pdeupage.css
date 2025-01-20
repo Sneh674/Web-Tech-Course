@@ -1,0 +1,21 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.logo{
+    width: 300px;
+}
+.nav{
+    padding: 20px;
+    background-color: rgb(123, 167, 249);
+}
+.navelements{
+    font-size: large;
+    display: flex;
+    justify-content: space-evenly;
+}
+section{
+    padding: 20px;
+    font-size: large;
+    margin: 20px;
+}
