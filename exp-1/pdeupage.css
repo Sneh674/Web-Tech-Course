@@ -14,8 +14,24 @@
     display: flex;
     justify-content: space-evenly;
 }
-section{
+/* section{
     padding: 20px;
     font-size: large;
     margin: 20px;
+} */
+section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #f4ece4;
+}
+section div {
+    margin-bottom: 10px;
+}
+.sectiontitle{
+    font-size: x-large;
+    font-weight: bold;
+    color: color-mix(in srgb, blue 50%, red 50%);
 }
