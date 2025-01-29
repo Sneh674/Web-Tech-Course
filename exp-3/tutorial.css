@@ -1,0 +1,109 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+}
+
+.nav {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-bottom: 1px solid black;
+    margin-bottom: 25px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.navleft {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navlogo>img {
+    width: 25px;
+}
+
+.navleft>h2 {
+    margin-right: 20px;
+}
+
+.navright {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.tuttitle {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.tuttitle>div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    gap: 30px;
+}
+
+.titleleft>p {
+    width: 550px;
+}
+
+.titlebutton {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+}
+
+.titlebutton>button {
+    font-size: medium;
+    border-radius: 5px;
+    padding: 8px 12px 8px 12px;
+    align-items: center;
+}
+
+/* .tuttitle div div{
+    width: min-content;
+} */
+.titleright{
+    justify-content: flex-end;
+    position: relative;
+}
+.titleright>button{
+    position: absolute;
+    top: 50%;
+}
+.titleright>.playbutton{
+    position: absolute;
+    top: 40%;
+}
+.titletime{
+    position: absolute;
+    bottom: 2%;
+    left: 7%;
+}
+.titleright>img {
+    margin-top: 20px;
+    filter: blur(1px) brightness(0.7);
+}
+
