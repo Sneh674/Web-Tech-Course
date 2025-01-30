@@ -2,12 +2,19 @@
     margin: 0%;
     padding: 0%;
 }
+.sections{
+    padding-left: 30px;
+    padding-right: 30px;
+}
 .logo{
     width: 300px;
 }
 .nav{
     padding: 20px;
     background-color: rgb(123, 167, 249);
+    /* position:fixed;
+    top: 0%;
+    width: 100%; */
 }
 .navelements{
     font-size: large;
@@ -34,4 +41,11 @@ section div {
     font-size: x-large;
     font-weight: bold;
     color: color-mix(in srgb, blue 50%, red 50%);
+}
+.campuspics img{
+    border-radius: 5px;
+}
+.campuspics{
+    display: flex;
+    justify-content: space-between;
 }

@@ -1,0 +1,38 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f9c0c0;
+}
+.main{
+    padding: 40px;
+}
+
+th{
+    background-color: #ffdf87;
+}
+td{
+    background-color: #96ff6d;
+}
+table{
+    border: 3px;
+    border-style: double;
+    border-color: black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+th{
+    border: 1px dashed rgb(78, 9, 255);
+}
+td{
+    border: 1px dashed rgb(78, 9, 255);
+}
+.toprow>th{
+    width: 200px;
+    height: 50px;
+}
+th{
+    height: 80px;
+}
