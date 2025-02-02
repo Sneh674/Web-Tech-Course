@@ -85,30 +85,34 @@ a {
 /* .tuttitle div div{
     width: min-content;
 } */
-.titleright{
+.titleright {
     justify-content: flex-end;
     position: relative;
 }
-.titleright>button{
+
+.titleright>button {
     position: absolute;
     top: 50%;
 }
-.titleright>.playbutton{
+
+.titleright>.playbutton {
     position: absolute;
     top: 38%;
     margin-right: 50px;
 }
-.titletime{
+
+.titletime {
     position: absolute;
     bottom: 5%;
     left: 4.5%;
 }
+
 .titleright>img {
     margin-top: 20px;
     filter: blur(0px) brightness(1);
 }
 
-.middlebar{
+.middlebar {
     margin-top: 20px;
     margin-bottom: 10px;
     margin-left: 150px;
@@ -123,14 +127,15 @@ a {
     border-radius: 5px;
 }
 
-.vieolist{
+.vieolist {
     padding-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
 }
-.video{
+
+.video {
     width: 1400px;
     display: flex;
     justify-content: left;
@@ -138,8 +143,120 @@ a {
     padding-right: 100px;
     gap: 20px;
 }
-.video>img{
+
+.video>img {
     width: 300px;
     display: flex;
     border-radius: 5px;
+}
+.videocontent>h3{
+    font-size: 25px;
+}
+.videodesc{
+    font-size: 15px;
+}
+.videodate{
+    font-size: 15px;
+}
+.videocontent{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.footer {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+    padding-left: 150px;
+}
+
+.footer-brand {
+    /* flex: 1 1 250px; */
+}
+
+.footer-title {
+    color: #ff4a4a;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+    background-size: cover;
+}
+
+.twitter {
+    background-image: url('twitter-icon.png');
+    /* Add Twitter icon image */
+}
+
+.github {
+    background-image: url('github-icon.png');
+    /* Add GitHub icon image */
+}
+
+.footer-links {
+    display: flex;
+    flex: 2 1 600px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column h3 {
+    color: #ff4a4a;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+}
+
+.footer-bottom a {
+    color: #4aa1ff;
+    text-decoration: none;
 }
