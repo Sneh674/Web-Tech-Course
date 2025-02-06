@@ -1,20 +1,22 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
 }
 
-.main{
+.main {
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     background: linear-gradient(blue, #1f5ae3, #5caaf9);
-    height: 100vh;
+    min-height: 100vh;
     /* overflow-y: scroll; */
 }
-.header{
+
+.header {
     display: flex;
     border-radius: 20px;
-    background: linear-gradient(45deg, #00A0DC ,#1d59e4, rgb(63, 63, 246));
+    background: linear-gradient(45deg, #00A0DC, #1d59e4, rgb(63, 63, 246));
     padding: 10px;
     /* justify-content: space-between; */
     gap: 150px;
@@ -25,38 +27,74 @@
     /* background: linear-gradient(45deg, blue, #7da4ff, #00A0DC); */
     color: white;
 }
-.info{
+
+.info {
     display: flex;
     gap: 100px;
 }
-#profileimg{
+
+#profileimg {
     width: 100px;
     border-radius: 50%;
     border: 5px solid honeydew;
 }
-.headerlinks>a{
+
+.headerlinks>a {
     display: flex;
     align-items: center;
     margin-bottom: 3px;
 }
-a>img{
+
+a>img {
     width: 20px;
     /* mix-blend-mode:; */
     margin-right: 5px;
 }
-.contentlist>a{
-    text-decoration: none;
+
+.contentlist {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100px;
+    gap: 10px;
+    font-size: 25px;
 }
 
-.allcontent{
+.contentlist>a {
+    text-decoration: none;
+    background: linear-gradient(90deg, #f2cd76, #ffad42, #ff5656);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* color: rgb(253, 202, 0);
+    background-color: #ff3737; */
+}
+
+.allcontent {
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 30px;
     display: flex;
+    gap: 30px;
+}
+
+iframe {
+    height: 500px;
+    width: 500px;
+}
+
+/* .content{
+    width: 500px;
+} */
+.content {
+    display: flex;
+    width: 85%;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px 7px 1px rgb(33, 181, 255);
 
 }
 
-iframe{
-    height: 500px;
-    width: 500px;
+iframe {
+    flex-grow: 1;
+    /* width: 1300px; */
 }

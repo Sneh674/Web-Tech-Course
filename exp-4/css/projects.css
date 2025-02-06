@@ -1,0 +1,42 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    /* height: 100%; */
+    box-sizing: border-box;
+}
+.content{
+    height: 100%;
+    position: fixed;
+    overflow-y: scroll;
+    background:linear-gradient(45deg, #00A0DC, #1d59e4, rgb(63, 63, 246));
+    border-radius: 10px;
+    padding-left: 20px;
+        /* display: flex;
+    flex-direction: column; */
+}
+.content::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+.contenttitle{
+    font-size: 30px;
+    margin: 10px;
+    background: linear-gradient(0deg, #f2cd76, #f6883f, #f96767);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.projtitle{
+    font-size: 20px;
+}
+.projsummary{
+    font-size: 17px;
+}
