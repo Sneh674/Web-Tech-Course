@@ -13,11 +13,25 @@ body{
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(blue, #1f5ae3, #5caaf9);
-    /* height: 100%; */
+    background: linear-gradient(90deg, rgb(56, 56, 204), #3290f4, #49a4ff);
+    background-size: 300% 300%;
+    animation: gradientMove 7s infinite; /* Apply animation */
     min-height: 100vh;
-    /* overflow-y: scroll; */
 }
+
+/* Define the keyframes for the gradient animation */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%; /* Start position */
+    }
+    50% {
+        background-position: 100% 50%; /* Midway position */
+    }
+    100% {
+        background-position: 0% 50%; /* Return to start */
+    }
+}
+
 
 .header {
     display: flex;
