@@ -3,12 +3,18 @@
     margin: 0%;
     box-sizing: border-box;
 }
-
+html{
+    /* height: 100%; */
+}
+body{
+    /* height: 100%; */
+}
 .main {
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     background: linear-gradient(blue, #1f5ae3, #5caaf9);
+    /* height: 100%; */
     min-height: 100vh;
     /* overflow-y: scroll; */
 }
@@ -16,7 +22,7 @@
 .header {
     display: flex;
     border-radius: 20px;
-    background: linear-gradient(45deg, #00A0DC, #1d59e4, rgb(63, 63, 246));
+    background: linear-gradient(45deg, #00a0dc, #1d59e4, rgb(63, 63, 246));
     padding: 10px;
     /* justify-content: space-between; */
     gap: 150px;
@@ -75,11 +81,13 @@ a>img {
     padding-top: 30px;
     display: flex;
     gap: 30px;
+    flex-grow: 1;
 }
 
 iframe {
-    height: 500px;
-    width: 500px;
+    /* min-height: 700px; */
+    /* height: 80%; */
+    /* width: 500px; */
 }
 
 /* .content{
@@ -88,13 +96,143 @@ iframe {
 .content {
     display: flex;
     width: 85%;
+    flex-grow: 1;
     justify-content: center;
     border-radius: 10px;
     box-shadow: 4px 4px 7px 1px rgb(33, 181, 255);
-
 }
 
 iframe {
     flex-grow: 1;
     /* width: 1300px; */
+}
+
+@media (max-width: 830px) {
+    .header {
+        gap: 100px;
+    }
+
+    .info {
+        gap: 80px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    .allcontent {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 740px) {
+    #profileimg {
+        width: 80px;
+        border-radius: 50%;
+        border: 3px solid honeydew;
+    }
+
+    .header {
+        border-radius: 15px;
+        padding: 7px;
+        gap: 65px;
+        margin: 10px;
+    }
+
+    .allcontent {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 10px;
+        gap: 15px;
+    }
+    .contentlist {
+        width: 80px;
+        gap: 7px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 560px) {
+    #profileimg {
+        width: 70px;
+        border-radius: 50%;
+        border: 3px solid honeydew;
+    }
+
+    .header {
+        border-radius: 15px;
+        padding: 7px;
+        gap: 25px;
+        /* justify-content:baseline; */
+    }
+
+    .allcontent {
+        padding-left: 150px;
+        padding-right: 15px;
+        padding-top: 10px;
+    }
+
+    .info {
+        /* gap: 100px; */
+        justify-content: space-between;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 10px;
+    }
+
+    .header a img {
+        width: 10px;
+    }
+
+    .header a {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    .content {
+        border-radius: 7px;
+    }
+}
+
+@media( min-width: 1500px){
+    h1{
+        font-size: 50px
+    }
+    #profileimg {
+        width: 120px;
+        border-radius: 50%;
+    }
+    .info{
+        gap: 250px;
+    }
+    header a{
+        font-size: 20px;
+    }
+    header a img{
+        width: 25px;
+    }
+    .allcontent {
+        /* padding-left: 25px; */
+        /* padding-right: 0px; */
+        /* padding-top: 10px; */
+        gap: 75px;
+    }
+    .contentlist {
+        width: 120px;
+        gap: 15px;
+        font-size: 30px;
+    }
 }

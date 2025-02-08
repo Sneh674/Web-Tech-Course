@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 .content{
+    width: 100%;
     height: 100%;
     position: fixed;
     overflow-y: scroll;
@@ -33,10 +34,58 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+    background: linear-gradient(270deg, #d0ff00, #e1ff00, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .projtitle{
     font-size: 20px;
 }
 .projsummary{
     font-size: 17px;
+}
+.project>a{
+}
+
+@media(max-width: 350px){
+    .projtitle{
+        font-size: 17px;
+    }
+    .projsummary{
+        font-size: 14px;
+    }
+    .content{
+        border-radius: 7px;
+        padding: 15px;
+    }
+    .contenttitle{
+        font-size: 23px;
+        margin: 5px;
+    }
+}
+
+
+@media(min-width: 1250px){
+    .projtitle{
+        font-size: 35px;
+    }
+    .projsummary{
+        font-size: 30px;
+    }
+    .content{
+        padding: 25px;
+    }
+    .contenttitle{
+        font-size: 55px;
+        margin: 10px;
+    }
+    .project>a{
+        font-size: 30px;
+    }
+    .projects{
+        gap: 25px;
+    }
+    .project{
+        gap: 10px;
+    }
 }
