@@ -46,7 +46,42 @@
 }
 .project>a{
 }
+.projimg{
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow-x: auto; */
+    gap: 10px;
+    /* scrollbar-width: none;  */
+    /* touch-action: pan-x; Prevent vertical scrolling when swiping horizontally */
+    /* scroll-snap-type: x mandatory; Firefox for Hover UX */
+}
 
+.projimg img{
+    height: 250px;
+    /* width: 230px; */
+    border-radius: 10px;
+}
+
+@media(max-width: 1300px){
+    .projimg>img{
+        height: 200px;
+    }
+}
+@media(max-width: 1000px){
+    .projimg>img{
+        height: 180px;
+    }
+}
+@media(max-width: 750px){
+    .projimg>img{
+        height: 150px;
+    }
+}
+@media(max-width: 500px){
+    .projimg>img{
+        height: 100px;
+    }
+}
 @media(max-width: 350px){
     .projtitle{
         font-size: 17px;
