@@ -13,16 +13,26 @@
             margin: 0%;
             box-sizing: border-box;
         }
-        .content{
+
+        .content {
             display: flex;
             flex-direction: column;
             /* align-items: center; */
             width: 100%;
+            padding-bottom: 20px;
         }
-        hr{
+
+        .subtitle {
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(112, 112, 112);
+        }
+
+        hr {
             width: 100%;
         }
-        h3{
+
+        h3 {
             text-align: center;
         }
     </style>
@@ -30,33 +40,41 @@
 
 <body>
     <div class="main"
-        style="display: flex; flex-direction: column; height: 100vh; align-items: center; background-color: white; padding: 40px;">
-        <div class="header content">
-            <h1 style="text-align: center;">Sneh Naik</h1>
-            <h3 style="text-align: center;">Web Developer</h3>
-            <h5 style="text-align: center;">naiksneh6@gmail.com | LinkedIn | Ahmedabad</h5>
+        style="font-size: 18px; display: flex; flex-direction: column; height: 100vh; align-items: center; background-color: white; padding: 40px;">
+        <div class="header content" style="font-size: 21px;">
+            <h1  style="text-align: center;"  style="font-size: 25px;">Sneh Naik</h1>
+            <h3 class="subtitle" style="text-align: center;"  style="font-size: 21px;">Web Developer</h3>
+            <h5 class="subtitle" style="text-align: center;"  style="font-size: 17px;">naiksneh6@gmail.com | LinkedIn | Ahmedabad</h5>
         </div>
         <div class="summary content">
             <h3>Summary</h3>
             <hr>
-            <div class="conttext">My name is sneh naik akjb Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, nostrum!</div>
+            <div class="conttext">
+                <strong class="subtitle">Full-Stack Developer</strong> <br>
+                Proficient in HTML, CSS, JavaScript, ReactJS, ExpressJS, MongoDB, and MySQL, with a strong foundation in
+                Java and data visualization using Python. Experienced in building both frontend and backend projects
+                with a focus on efficiency and collaboration. Quick to adapt, committed to timely task completion, and
+                passionate about continuous learning
+            </div>
         </div>
         <div class="content experience">
             <h3>Experience</h3>
             <hr>
             <div class="subtitle">
-                Company name
+                Gateway Corp
             </div>
-            <div class="">Title</div>
-            <div class="">Description</div>
-            <div class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum inventore porro labore, provident obcaecati placeat?</div>
+            <div class="">Web Developer Intern</div>
+            <div class="">Developed two full-stack web applications, a book management system and a cash flow tracker,
+                using the MERN stack to deliver dynamic and responsive user experiences.</div>
         </div>
         <div class="content">
             <h3>Education</h3>
             <hr>
             <div class="edu">
-                <div class="insti subtitle">Pandit Deendayal Energy University</div>
-                <div class="scores">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi recusandae libero ullam?</div>
+                <div class="insti subtitle" style="display: flex; justify-content: space-between;"><div>Pandit         Deendayal Energy University</div>
+                <div>Gandhinagar, Gujarat</div>
+                </div>
+                <div class="scores" style="display: flex; justify-content: space-between;"><div>Information and Communication Technology</div><div class="subtitle">2022-2026</div></div>
             </div>
         </div>
         <div class="skills content">
@@ -72,18 +90,30 @@
             <h3>Projects</h3>
             <hr>
             <ul>
-                <li><div class="proj">
-                    <div class="subtitle">Books Management app</div>
-                    <div class="projdetails">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid maxime porro, totam ullam iste maiores illum rem mollitia repellendus laboriosam.
+                <li>
+                    <div class="proj">
+                        <div class="subtitle">Books Management app</div>
+                        <div class="projdetails">
+                            Developed a full-stack MERN web application where people can upload and share their books to
+                            multiple user achieved with the help of Multer and Cloudinary for book cover image and file
+                            upload. Implemented user authentication using JWT dynamic search, sorting, and RESTful APIs
+                            for backend operations. Designed MongoDB database schema for efficient data storage.
+                            Tech Stack: ReactJS, Node.js, ExpressJS, MongoDB, Cloudinary
+                        </div>
                     </div>
-                </div></li>
-                <li><div class="proj">
-                    <div class="subtitile">Cash Flow Manager</div>
-                    <div class="projdetails">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut adipisci eum est, saepe at dignissimos atque error, quos facilis eveniet, incidunt corrupti laborum fugit placeat!
+                </li>
+                <li>
+                    <div class="proj">
+                        <div class="subtitle">Cash Flow Manager</div>
+                        <div class="projdetails">Created a MERN-based platform for tracking income, expenses, and
+                            savings. Implemented user
+                            authentication using JWT for security and privacy. Designed a complex MongoDB schema to
+                            handle user transactions and categorize transactions based on type such as inflow or outflow
+                            and
+                            further categorized based on sub categories created by the user.
+                            Tech Stack: ReactJS, Node.js, ExpressJS, MongoDB</div>
                     </div>
-                </div></li>
+                </li>
             </ul>
         </div>
     </div>
