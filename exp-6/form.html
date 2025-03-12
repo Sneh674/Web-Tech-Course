@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sneh Naik - feedback form</title>
     <style>
-        *{
+        * {
             padding: 5px;
             margin: 0%;
             box-sizing: border-box;
         }
-        input{
+
+        input {
             margin-bottom: 10px;
         }
+
         .stars {
             display: flex;
             font-size: 2rem;
             cursor: pointer;
         }
+
         .star {
             color: lightgray;
             transition: color 0.2s;
         }
-        .star.active, .star:hover, .star:hover ~ .star {
+
+        .star {
+            color: gray;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .star.hover,
+        .star.active {
             color: yellow;
         }
     </style>
 </head>
+
 <body>
     <div class="main">
         <form style="display: flex;flex-direction: column; width: 300px;">
@@ -54,4 +67,5 @@
 
     <script src="form.js"></script>
 </body>
+
 </html>
