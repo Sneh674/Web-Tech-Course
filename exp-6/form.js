@@ -7,7 +7,8 @@ document.querySelector("form").addEventListener("submit", function (event) {
         name: formData.get("uname"),
         email: formData.get("email"),
         mobile: formData.get("mobile"),
-        file: formData.get("file") ? formData.get("file").name : "No file uploaded"
+        file: formData.get("file") ? formData.get("file").name : "No file uploaded",
+        feedback: formData.get("feedback"),
     };
 
     console.log("Form Submitted:", data);

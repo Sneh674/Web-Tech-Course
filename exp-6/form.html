@@ -41,8 +41,9 @@
 </head>
 
 <body>
-    <div class="main">
-        <form style="display: flex;flex-direction: column; width: 300px;">
+    <div class="main" style="display: flex; justify-content: center;">
+        <form style="display: flex;flex-direction: column; width: 300px; background-color: #a4a4a4; padding: 5px; border-radius: 5px;">
+            <h2><strong>Feedback Form</strong></h2>
             <label for="uname">Enter name:</label>
             <input type="text" name="uname" id="" required>
             <label for="email">Enter email:</label>
@@ -51,6 +52,8 @@
             <input type="tel" name="mobile" id="" required>
             <label for="file">Upload file:</label>
             <input type="file" name="file" id="">
+            <label for="feedback"></label>
+            <input type="text" name="feedback" id="" required>
 
             <div class="stars" id="stars">
                 <span class="star" data-value="1">&#9733;</span>
@@ -61,7 +64,7 @@
             </div>
             <p id="ratingText">Rating: 0</p>
 
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" style="width: 100px; border-radius: 3px;">
         </form>
     </div>
 
