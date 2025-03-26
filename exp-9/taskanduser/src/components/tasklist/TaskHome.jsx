@@ -11,9 +11,12 @@ const TaskHome = () => {
     console.log(taskList);
     setTaskName("");
   };
-  const handleDelete = (e) => {
-    const taskname = e.target.parentNode.querySelector(".taskname").innerText;
-    setTaskList(taskList.filter((task) => task.taskname !== taskname));
+  // const handleDelete = (e) => {
+  //   const taskname = e.target.parentNode.querySelector(".taskname").innerText;
+  //   setTaskList(taskList.filter((task) => task.taskname !== taskname));
+  // };
+  const handleDelete = (index) => {
+    setTaskList(taskList.filter((task,i) => i!==index));
   };
   return (
     <div>
@@ -41,7 +44,7 @@ const TaskHome = () => {
             return (
               <div className="task" key={index}>
                 <div className="taskname">{task.taskname}</div>
-                <button onClick={handleDelete}>Delete</button>
+                <button onClick={()=>{handleDelete(index)}}>Delete</button>
               </div>
             );
           })
