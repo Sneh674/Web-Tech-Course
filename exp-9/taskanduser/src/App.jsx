@@ -4,10 +4,10 @@ import UserHome from "./components/userlist/UserHome";
 
 function App() {
   return (
-    <div className="main">
-      <TaskHome />
+    // <div className="main">
+      // <TaskHome />
       <UserHome />
-    </div>
+    // </div>
   );
 }
 
