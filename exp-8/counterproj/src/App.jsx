@@ -41,7 +41,7 @@ export default function App() {
           <input
             type="number"
             value={step}
-            onChange={(e) => setStep(e.target.value || 1)}
+            onChange={(e) => setStep(Number(e.target.value) || 1)}
             style={{ width: "40px", border: "1px solid", borderRadius: "4px" }}
           />
         </p>
