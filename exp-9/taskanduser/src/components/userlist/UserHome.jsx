@@ -31,6 +31,7 @@ const UserHome = () => {
           value={user.name}
           onChange={handleChange}
           required
+          placeholder="Enter name"
         />
         <input
           type="email"
@@ -38,6 +39,7 @@ const UserHome = () => {
           value={user.email}
           onChange={handleChange}
           required
+          placeholder="Enter email"
         />
         <input
           type="number"
